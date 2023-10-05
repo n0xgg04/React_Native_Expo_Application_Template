@@ -2,9 +2,10 @@ import * as React from "react";
 import { Text, SafeAreaView, Button } from "react-native";
 import useAppNavigator from "@Hooks/useAppNavigator";
 import ScreenNameEnum from "@/common/provider/enum/ScreenNameEnum";
+import { NavigatorObject } from "@/@types/interfaces";
 
 type Props = {
-  navigation: object;
+  navigation: NavigatorObject;
 };
 
 export default React.memo(function HomeScreen({

@@ -43,7 +43,7 @@ import { useDispatch, useSelector } from '@Hooks/redux';
 
 ### Add new screen
 - Step 1 : Create new screen in `src/screens`
-- Step 2: Add new screen to `src/config/ScreenRegister.tsx`
+- Step 2: Add new screen to `src/config/ScreenRegister.ts`
 
 ```js
 const ScreenRegisterList: ScreenInfo[] = [
@@ -62,3 +62,17 @@ const ScreenRegisterList: ScreenInfo[] = [
 ```
 
 Don't forget add name for screen in ScreenNameEnum
+
+### GraphQL
+- Schema : `src/graphql/schema.graphql`
+- Query : `src/graphql/queries`
+- Mutation : `src/graphql/mutations`
+- Subscription : `src/graphql/subscriptions`
+- Fragment : `src/graphql/fragments`
+
+#### Run Codegen: 
+```sh
+yarn codegen
+```
+
+Generated files save in `src/graphql/__generated__`

@@ -1,24 +1,13 @@
 import ScreenNameEnum from "@/common/provider/enum/ScreenNameEnum";
+import { ApplicationNavigator, NavigatorObject } from "@/@types/interfaces";
 
 interface Props {
-  navigation: {
-    navigate: (screenName: ScreenNameEnum, params?: object) => void;
-    push: (screenName: ScreenNameEnum, params?: object) => void;
-    goBack: () => void;
-    popToTop: () => void;
-  };
+  navigation: NavigatorObject;
 }
 
-interface Navigator {
-  navigateTo: (screenName: ScreenNameEnum, params?: object) => void;
-  push: (screenName: ScreenNameEnum, params?: object) => void;
-  go: {
-    back: () => void;
-    backToFirstScreen: () => void;
-  };
-}
-
-export default function useAppNavigator({ navigation }: Props): Navigator {
+export default function useAppNavigator({
+  navigation,
+}: Props): ApplicationNavigator {
   /**
    * @description Navigate to screen
    * @param screenName ScreenNameEnum

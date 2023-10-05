@@ -15,3 +15,19 @@ export interface DefaultStoreInterface {
   theme: AppThemeMode;
   user: UserAuthencationInterface;
 }
+
+export interface NavigatorObject {
+  navigate: (screenName: ScreenNameEnum, params?: object) => void;
+  push: (screenName: ScreenNameEnum, params?: object) => void;
+  goBack: () => void;
+  popToTop: () => void;
+}
+
+interface ApplicationNavigator {
+  navigateTo: (screenName: ScreenNameEnum, params?: object) => void;
+  push: (screenName: ScreenNameEnum, params?: object) => void;
+  go: {
+    back: () => void;
+    backToFirstScreen: () => void;
+  };
+}
