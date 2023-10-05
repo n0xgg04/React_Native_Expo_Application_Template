@@ -3,6 +3,9 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
+    "include": [
+      "./src/@types/*.d.ts"
+    ],
     "paths": {
       "@Graphql/*": ["src/graphql/*"],
       "@Hooks/*": ["src/hooks/*"],

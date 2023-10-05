@@ -1,6 +1,8 @@
+import env from "src/common/env";
+
 const ApplicationConfig = {
   graphql: {
-    endpoint: "http://localhost:4000/graphql",
+    endpoint: env.GRAPHQL_ENDPOINT,
   },
 };
 

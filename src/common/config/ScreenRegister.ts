@@ -7,6 +7,7 @@ const ApplicationScreenObject = new ApplicationScreenBase({
     firstScreen: ScreenNameEnum.HOME,
   },
 });
+
 ApplicationScreenObject.addScreen({
   name: ScreenNameEnum.HOME,
   component: HomeScreen,
