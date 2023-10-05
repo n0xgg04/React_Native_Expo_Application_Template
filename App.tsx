@@ -3,9 +3,8 @@ import ApplicationLoadProvider from "@/common/provider/ApplicationLoader";
 import StoreProvider from "@/common/provider/StoreProvider";
 import ReactQueryProvider from "@/common/provider/ReactQueryProvider";
 import { RouterProvider } from "@/common/provider/RouterProvider";
-import { AppRegistry } from "react-native";
 import ApolloClientProvider from "@/common/provider/ApolloProvider";
-import appInfo from "./app.json";
+import ApplicationRegistry from "@/common/utils/ApplicationRegistry";
 
 export default function App(): React.JSX.Element {
   return (
@@ -21,4 +20,4 @@ export default function App(): React.JSX.Element {
   );
 }
 
-AppRegistry.registerComponent(appInfo.expo.name, () => App);
+ApplicationRegistry(App);

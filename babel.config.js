@@ -28,6 +28,7 @@ module.exports = function (api) {
             "@Assets": "./assets",
             "@Hooks": "./src/hooks",
             "@": "./src",
+            "#": "./",
           },
           extensions: [".js", ".jsx", ".ts", ".tsx"],
         },

@@ -13,7 +13,8 @@
       "@Screens/*": ["src/screens/*"],
       "@Stores/*": ["src/stores/*"],
       "@Assets/*": ["assets/*"],
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "#/*": ["./*"]
     }
   }
 }
