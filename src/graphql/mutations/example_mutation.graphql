@@ -1,0 +1,9 @@
+mutation addPosts($input: String!){
+    addPost(title: $input){
+        id
+        title
+        author{
+            id
+        }
+    }
+}

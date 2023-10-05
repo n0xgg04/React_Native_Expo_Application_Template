@@ -5,6 +5,7 @@ import ReactQueryProvider from "@/common/provider/ReactQueryProvider";
 import { RouterProvider } from "@/common/provider/RouterProvider";
 import { AppRegistry } from "react-native";
 import ApolloClientProvider from "@/common/provider/ApolloProvider";
+import appInfo from "./app.json";
 
 export default function App(): React.JSX.Element {
   return (
@@ -20,4 +21,4 @@ export default function App(): React.JSX.Element {
   );
 }
 
-AppRegistry.registerComponent("App", () => App);
+AppRegistry.registerComponent(appInfo.expo.name, () => App);

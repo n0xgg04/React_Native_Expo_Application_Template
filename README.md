@@ -1,5 +1,5 @@
 ## Expo Application Template (TypeScript)
-- By [N0XGG04](https://github.com/n0xgg04)
+- By [n0xgg04](https://github.com/n0xgg04)
 
 > This is a template for Expo applications. It includes the following:
 > 
@@ -9,6 +9,7 @@
 > - [x] Apollo Client, GraphQL
 > - [x] React Query
 > - [x] Axios
+> - [x] TailwindCSS (JIT)
 
 
 
@@ -36,3 +37,28 @@ yarn ios
 ```ts
 import { useDispatch, useSelector } from '@Hooks/redux';
 ```
+
+### Global config
+- `src/config/ApplicationConfig.ts`
+
+### Add new screen
+- Step 1 : Create new screen in `src/screens`
+- Step 2: Add new screen to `src/config/ScreenRegister.tsx`
+
+```js
+const ScreenRegisterList: ScreenInfo[] = [
+    {
+        name: ScreenNameEnum.HOME,
+        component: HomeScreen,
+    },
+    {
+        name: ScreenNameEnum.DASHBOARD,
+        component: HomeScreen,
+    },
+    {
+        ...new screen here
+    }
+];
+```
+
+Don't forget add name for screen in ScreenNameEnum

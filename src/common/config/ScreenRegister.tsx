@@ -7,6 +7,9 @@ const ScreenRegisterList: ScreenInfo[] = [
   {
     name: ScreenNameEnum.HOME,
     component: HomeScreen,
+    options: {
+      headerShown: false,
+    },
   },
   {
     name: ScreenNameEnum.DASHBOARD,
